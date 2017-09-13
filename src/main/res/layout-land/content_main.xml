@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.myanmar.mmtexttool.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnBoldText"
+            android:background="@null"
+            android:src="@drawable/b_ic"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_bold"
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/btnBoldText"
+            android:text="Bold Text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:src="@drawable/c_ic"
+            android:layout_below="@+id/tv_bold"
+            android:id="@+id/btnClone"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_clone"
+            android:text="Clone Text"
+            android:layout_below="@+id/btnClone"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:background="@null"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/btnBlankText"
+            android:src="@drawable/i_ic"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_invisible"
+            android:layout_below="@id/btnBlankText"
+            android:textColor="#000"
+            android:text="Invisible Text"
+            android:gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:id="@+id/btnStyle"
+            android:src="@drawable/s_ic"
+            android:layout_below="@id/tv_invisible"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:text="Stylish Text"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:layout_below="@+id/btnStyle"
+            android:gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageButton
+            android:background="@null"
+            android:src="@drawable/f_ic"
+            android:id="@+id/btnFipText"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btnFipText"
+            android:gravity="center_horizontal"
+            android:textColor="#000"
+            android:id="@+id/tv_flip"
+            android:text="Flip Text"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:background="@null"
+            android:id="@+id/btnAbout"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/a_ic"
+            android:layout_below="@id/tv_flip"
+            android:layout_width="100dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:text="About App"
+            android:layout_below="@id/btnAbout"
+            android:layout_centerHorizontal="true"
+            android:textColor="#000"
+            android:gravity="center_horizontal"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</LinearLayout>

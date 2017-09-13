@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.myanmar.mmtexttool.About"
+    tools:showIn="@layout/activity_about">
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adUnitId="ca-app-pub-4173348573252986/3254327616">
+    </com.google.android.gms.ads.AdView>
+
+    <ImageView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_about"
+        android:src="@drawable/icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/iv_about"
+        android:textColor="#000"
+        android:autoLink="all"
+        android:text="App Name : My Text Tool \nVersion : 1.0 \nRelease Date : 9.9.2017 \nFacebook : www.fb.com/mmTextTool \nEmail : mmtexttool@gmail.com \nWebsite : mmTextTool.blogspot.com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
